@@ -39,7 +39,7 @@ const PricePlan = () => {
         <h1 className="text-2xl text-blue-500">Always know what you’ll pay</h1>
       </div>
 
-      <div className="flex flex-col justify-start items-start gap-4">
+      {/* <div className="flex flex-col justify-start items-start gap-4">
         <div>
           <label>PRICING PLANS</label>
         </div>
@@ -68,7 +68,7 @@ const PricePlan = () => {
           <FiDownload />
           <label>File uploads to S3</label>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

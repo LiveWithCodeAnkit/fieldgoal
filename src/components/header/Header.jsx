@@ -18,7 +18,7 @@ const Header = () => {
         className="flex justify-center items-center py-20  font-Roboto"
         style={divStyle}
       >
-        <div className="flex flex-col items-start justify-center gap-4">
+        <div className="flex flex-col items-center lg:items-start justify-center gap-4">
           <div className="flex justify-center items-start gap-20 lg:gap-96 p-5">
             <Link className="flex items-center gap-2 leading-none" href="#">
               <MdOutlineSubject className="text-5xl bg-[#047756] text-white rounded-md" />
@@ -46,7 +46,7 @@ const Header = () => {
               </ul>
             </nav>
           </div>
-          <div className="font-extrabold text-5xl lg:w-[47rem] p-5 text-blue-darker font-sans">
+          <div className="font-extrabold text-5xl lg:w-[47rem] p-5 text-blue-darker font-sans text-center lg:text-start">
             <span>
               Don&apos;t build a whole backend just for one stupid form.
             </span>
