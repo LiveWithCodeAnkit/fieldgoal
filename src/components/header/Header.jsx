@@ -66,8 +66,6 @@ const Header = () => {
               alt="message pic"
             />
             <div className="animation-code relative">
-              
-
               <div className="font-mono  sm:flex">
                 <div className="bg-blue-light lg:flex-col  leading-loose pl-6 pr-4 py-6 rounded-l-md text-white text-xs  hidden  lg:flex">
                   <span class="mb-3">1</span>
@@ -82,29 +80,36 @@ const Header = () => {
                     &lt;<span className="text-pink-code">form</span>{" "}
                     <span className="text-green-code">action</span>=
                     <span className="text-yellow-code">
-                      "https://fieldgoal.io/f/tGhtN"
+                      &quot;https://fieldgoal.io/f/tGhtN&quot;
                     </span>{" "}
                     <span className="text-green-code">method</span>=
-                    <span className="text-yellow-code">"POST"</span>&gt;
+                    <span className="text-yellow-code">&quot;POST&quot;</span>
+                    &gt;
                   </span>
                   <span className="mb-5 pl-8 md:mb-4">
                     &lt;<span className="text-pink-code">input</span>{" "}
                     <span className="text-green-code">type</span>=
-                    <span className="text-yellow-code">"text"</span>{" "}
+                    <span className="text-yellow-code">&quot;text&quot;</span>{" "}
                     <span className="text-green-code">name</span>=
-                    <span className="text-yellow-code">"first_name"</span>&gt;
+                    <span className="text-yellow-code">
+                      &quot;first_name&quot;
+                    </span>
+                    &gt;
                   </span>
                   <span className="mb-5 pl-8 md:mb-4">
                     &lt;<span className="text-pink-code">input</span>{" "}
                     <span className="text-green-code">type</span>=
-                    <span className="text-yellow-code">"text"</span>{" "}
+                    <span className="text-yellow-code">&quot;text&quot;</span>{" "}
                     <span className="text-green-code">name</span>=
-                    <span className="text-yellow-code">"last_name"</span>&gt;
+                    <span className="text-yellow-code">
+                      &quot;last_name&quot;
+                    </span>
+                    &gt;
                   </span>
                   <span className="mb-5 pl-8 md:mb-4">
                     &lt;<span className="text-pink-code">button</span>{" "}
                     <span className="text-green-code">type</span>=
-                    <span className="text-yellow-code">"submit"</span>
+                    <span className="text-yellow-code">&quot;submit&quot;</span>
                     &gt;Submit&lt;/
                     <span className="text-pink-code">button</span>&gt;
                   </span>
