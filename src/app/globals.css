@@ -117,7 +117,20 @@ body {
   --tw-bg-opacity: 1;
   background-color: rgb(180 231 220 / var(--tw-bg-opacity));
 }
+.bg-screen-pattern-gray {
+    background: #f3f5f8;
+    background-color: #f3f5f8;
+    background-image: url(/images/screen-pattern-gray.svg?52128fc1b0d3833f522a5bcee6043105);
+    background-image: linear-gradient(hsla(0,0%,100%,.001),#f3f5f8),url(/images/screen-pattern-gray.svg?52128fc1b0d3833f522a5bcee6043105);
+    background-size: cover,500px auto
+}
 
+.bg-screen-pattern-indigo {
+    background: #424d91;
+    background-color: #424d91;
+    background-image: url(/images/screen-pattern-indigo.svg?98db6095e94321b7f31b854ad5f61300);
+    background-size: 500px auto
+}
 .bg-blue-darker {
   --tw-bg-opacity: 1;
   background-color: rgb(28 59 97 / var(--tw-bg-opacity));
