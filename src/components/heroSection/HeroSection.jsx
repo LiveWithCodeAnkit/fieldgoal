@@ -7,7 +7,7 @@ const HeroSection = () => {
   return (
     <>
       <div className="flex justify-center items-center pb-80 bg-screen-pattern-gray font-sans  relative">
-        <div className="flex flex-col items-center lg:items-start justify-center gap-4 px-28">
+        <div className="flex flex-col items-center lg:items-start justify-center gap-4 lg:px-96">
           <h1 className="text-2xl text-blue-darker font-extrabold lg:w-1/2 text-center lg:text-start p-2">
             Capturing form submissions has never been this hassle-free.
           </h1>
