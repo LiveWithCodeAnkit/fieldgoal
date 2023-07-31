@@ -3,12 +3,13 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { MdOutlineSubject } from "react-icons/md";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { navBar } from "../constant/navBar";
 
 const Header = () => {
   const [showMediaIcon, setShowMediaIcon] = useState(false);
   return (
     <>
-      <div className="flex justify-around items-center  p-5">
+      <div className="flex justify-between items-center  p-5 relative border">
         <div>
           <Link className="flex items-center gap-2 leading-none" href="#">
             <MdOutlineSubject className="text-2xl lg:text-5xl bg-[#047756] text-white rounded-md" />
@@ -17,34 +18,45 @@ const Header = () => {
             </label>
           </Link>
         </div>
-        <nav className="hidden md:flex">
-          <ul className="flex items-center gap-5 lg:gap-10 text-lg  text-blue-darker">
-            <li className="hover:underline">
-              <Link href="#">See what&apos;s new! 🎉</Link>
-            </li>
-            <li className="hover:underline">
-              <Link href="/login">Forms</Link>
-            </li>
-            <li className="hover:underline">
-              <Link href="#">Integrations</Link>
-            </li>
-            <li className="hover:underline">
-              <Link href="#">Account</Link>
-            </li>
-            <li className="hover:underline">
-              <Link href="#">Docs</Link>
-            </li>
-            <li className="hover:underline">
-              <Link href="#">Log out</Link>
-            </li>
+        <nav className={"hidden lg:flex"}>
+          <ul
+            className={
+              "flex items-center gap-5 lg:gap-10 text-lg  text-blue-darker"
+            }
+          >
+            {navBar.map((item) => (
+              <li className="hover:underline" key={item.id}>
+                <Link href={item.link}>{item.title}</Link>
+              </li>
+            ))}
           </ul>
         </nav>
-        <div className="humburger-nav md:hidden">
+        <nav
+          className={
+            showMediaIcon
+              ? "flex  w-full justify-start  lg:hidden absolute top-20 "
+              : "hidden"
+          }
+        >
+          <ul
+            className={
+              "flex  flex-col items-start gap-5  text-blue-darker bg-white w-full z-10"
+            }
+          >
+            {navBar.map((item) => (
+              <li className="hover:underline nav-item w-full" key={item.id}>
+                <Link href={item.link}>{item.title}</Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        <div className="humburger-nav lg:hidden">
           <a
             href="#"
             onClick={() => {
               setShowMediaIcon(!showMediaIcon);
-              console.log(showMediaIcon);
+              console.log("i am :-", showMediaIcon);
             }}
           >
             <GiHamburgerMenu className="icon-humburger text-4xl text-[#047756] " />

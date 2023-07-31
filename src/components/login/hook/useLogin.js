@@ -12,6 +12,7 @@ export const useLogin = () => {
   const handleSubmit = (values, { resetForm }) => {
     const { email, password } = values;
     console.log("i am login values:=", values);
+    router.push("/form")
   };
 
   return {

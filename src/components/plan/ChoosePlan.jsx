@@ -3,20 +3,11 @@ import React from "react";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import Link from "next/link";
 import { MdOutlineSubject } from "react-icons/md";
-import { useLogin } from "./hook/useLogin";
 
-const Login = () => {
-
-
-  const { initialValues, schema, handleSubmit } = useLogin();
-
+const ChoosePlan = () => {
   return (
     <>
-      <Formik
-        initialValues={initialValues}
-        validationSchema={schema}
-        onSubmit={handleSubmit}
-      >
+      <Formik initialValues={""} validationSchema={""} onSubmit={""}>
         <Form>
           <div className="flex  justify-center items-start pt-9">
             <div className="flex flex-col justify-center items-center gap-12 p-10">
@@ -28,58 +19,49 @@ const Login = () => {
                   </label>
                 </Link>
               </div>
-              <div className="flex flex-col justify-center items-center  bg-white border-b-2 rounded-md">
+              <div className="flex flex-col justify-center items-center  bg-white border-b-2 rounded-md pb-8">
                 <div className="flex justify-center items-center">
                   <h1 className="p-4 font-normal text-blue-darker text-xl">
-                    Welcome Back
+                    Choose your Plan
                   </h1>
                 </div>
 
                 <div className="flex flex-col justify-center items-start gap-8 p-10 w-full">
                   <div className="flex flex-col justify-center items-start gap-3 w-full">
-                    <label className="classic-label">Email</label>
+                    <label className="classic-label">Name on Card</label>
                     <Field
                       type="text"
-                      name="email"
+                      name="name"
                       className="w-96 classic-typing-input-on-white"
                     />
                     <ErrorMessage
-                      name="email"
+                      name="name"
                       component="div"
                       className="font-normal text-blue-darker"
                     />
                   </div>
                   <div className="flex flex-col justify-center items-start gap-3 w-full">
-                    <label className="classic-label">Password</label>
+                    <label className="classic-label">Card</label>
                     <Field
                       type="text"
-                      name="password"
+                      name="card"
                       className="w-96 classic-typing-input-on-white"
                     />
                     <ErrorMessage
-                      name="password"
+                      name="card"
                       component="div"
                       className="font-normal text-blue-darker"
                     />
                   </div>
-                  <div className="flex justify-between items-start gap-10 text-blue-darker">
-                    <div className="flex justify-center items-center gap-2 ">
-                      <input type="checkbox" className="accent-[#05B381]" />
-                      Remember me
-                    </div>
-                    <Link href="/login/password" className="classic-link">
-                      Forgot your password?
-                    </Link>
-                  </div>
+
                   <button className="bg-[#047756] btn btn-indigo btn-lg uppercase w-full">
-                    LOG IN
+                    COMPLETE SIGNUP
                   </button>
                 </div>
-                <div className="flex justify-center items-center bg-gray-lighter border-t-2 border-gray-dark w-full p-7 rounded-b ">
-                  <div className="flex justify-center items-center gap-2 text-blue-darker text-center">
-                    <label>Don&apos;t have an account yet?</label>
-                    <Link href="/register">Sign up</Link>
-                  </div>
+                <div className="flex justify-center items-center ">
+                  <Link className="classic-link" href={"#"} >
+                    Change Plan
+                  </Link>
                 </div>
               </div>
             </div>
@@ -90,4 +72,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default ChoosePlan;
