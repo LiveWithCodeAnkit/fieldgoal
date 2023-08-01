@@ -97,9 +97,9 @@ const HeaderHome = () => {
               </Link>
             </div>
           </div>
-          <div className="flex flex-col justify-center items-start text-center gap-5">
-            <span className="slide-left font-extrabold text-3xl lg:text-5xl text-blue-darker font-sans flex-1">
-              Don&apos;t build a whole backend just for one stupid form.
+          <div className="flex flex-col justify-center items-start text-start gap-5">
+            <span className="slide-left font-extrabold text-3xl lg:text-5xl text-blue-darker font-sans">
+              Don&apos;t build a whole backend <br/> just for one stupid form.
             </span>
             <span className="slide-left text-xl font-normal text-blue-lighter">
               FieldGoal provides form endpoints as a service, so your simple
