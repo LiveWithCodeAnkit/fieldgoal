@@ -14,58 +14,34 @@ const PricePlan = () => {
     backgroundColor: "#424d91",
     backgroundImage: `linear-gradient(hsla(0, 5%, 100%, 0.001), #f3f5f8), url("/screen-pattern-indigo.svg?52128fc")`,
     backgroundSize: "500px auto",
+    height: "490px",
   };
 
   return (
     <>
-      <div className="flex justify-center items-center p-5 font-Roboto absolute top-[90rem] left-0 right-0 z-10">
-        <div className="flex flex-col justify-center items-center gap-8 p-8  border bg-white shadow-slate-400 rounded-md">
-          <div className="flex flex-col justify-center items-center gap-4">
-            <h1 className="flex justify-center items-center gap-3 text-2xl font-medium">
-              <ImQuotesLeft className="text-slate-400" /> FieldGoal saved me
-              hours of boilerplate
-            </h1>
-            <h1 className="flex justify-center items-center gap-3 text-2xl font-medium">
-              form creation. I love it!
-              <ImQuotesRight className="text-slate-400" />
-            </h1>
-          </div>
-
-          <label htmlFor="Taylor Otwell, Creator of Laravel">
-            Taylor Otwell, Creator of Laravel
-          </label>
-          <Image
-            src={"/vectorPricePlan.png"}
-            height={80}
-            width={80}
-            alt="vectorPricePlan.jpg"
-            className="rounded-full absolute top-40"
-          />
-        </div>
-      </div>
       <div
-        className="h-[35rem] flex justify-center items-center flex-col font-Roboto gap-2 "
+        className="h-[35rem] flex justify-center items-center flex-col font-Roboto gap-2 slide-right"
         style={divStyle}
       >
-        <div className="flex flex-col justify-center items-center w-1/2 gap-3">
-          <h1 className="text-4xl  text-white">Simple Pricing</h1>
+        <div className="flex flex-col justify-center items-center w-1/2 gap-3 text-center">
+          <h1 className="text-3xl lg:text-4xl  text-white">Simple Pricing</h1>
           <h1 className="text-2xl text-blue-500">
             Always know what you’ll pay
           </h1>
         </div>
       </div>
-      <div className="flex justify-center items-center relative">
-        <div className="flex justify-center items-center w-1/2  mt-36 absolute">
-          <div className="flex flex-col justify-center items-start w-96 gap-6   border-2 bg-white ">
+      <div className="flex flex-col lg:flex-row justify-center items-center relative slide-right">
+        <div className="flex flex-col lg:flex-row justify-center items-center 2xl:w-1/2  mt-36 lg:absolute">
+          <div className="flex flex-col justify-center items-start lg:w-96 gap-6   border-2 bg-white ">
             <div className="bg-gray-light font-bold px-10 py-6 rounded-t-md text-blue uppercase w-full">
               <label>PRICING PLANS</label>
             </div>
-            <div className="p-5 flex flex-col justify-center items-start gap-4">
+            <div className="p-5 flex flex-col justify-center items-start gap-4 text-start">
               <p className="text-blue-light">
                 Fieldgoal offers plans if you need a single form for your
                 personal website or need forms to support all of your clients.
               </p>
-              <label className="text-blue-light">
+              <label className="text-blue-light text-center">
                 All of our plans include:
               </label>
 
@@ -95,7 +71,7 @@ const PricePlan = () => {
           </div>
 
           <div>
-            <div className="w-[33rem]">
+            <div className="w-auto lg:w-[33rem]">
               <div className="bg-white pb-6 sm:px-10 sm:py-6 sm:rounded-t-md">
                 <table className="w-full text-blue-darker text-sm sm:text-xs md:text-sm">
                   <tbody>
@@ -156,6 +132,9 @@ const PricePlan = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="mt-20 lg:mt-96">
+        <Footer />
       </div>
     </>
   );

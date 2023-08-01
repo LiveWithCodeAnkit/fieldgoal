@@ -27,6 +27,6 @@ export const navBar = [
   {
     id: 6,
     title: "Log out",
-    link: "#",
+    link: "/",
   },
 ];

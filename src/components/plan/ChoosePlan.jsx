@@ -59,7 +59,7 @@ const ChoosePlan = () => {
                   </button>
                 </div>
                 <div className="flex justify-center items-center ">
-                  <Link className="classic-link" href={"#"} >
+                  <Link className="classic-link" href="/plan" >
                     Change Plan
                   </Link>
                 </div>

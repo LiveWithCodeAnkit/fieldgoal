@@ -2,10 +2,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto&display=swap");
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 /* .font-mono {
   font-family: Consolas, Menlo, Monaco, Liberation Mono, Courier New, monospace;
@@ -335,10 +331,6 @@ body {
 
 .text-lg {
   font-size: 1.125rem;
-}
-
-.text-4xl {
-  font-size: 1.875rem;
 }
 
 .text-xs {
@@ -701,3 +693,42 @@ body {
   -webkit-text-decoration-line: underline;
   text-decoration-line: underline;
 }
+.slide-right {
+  animation: 3s slide-right;
+}
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+.slide-left {
+  animation: 3s slide-left;
+}
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+.fade-in-down {
+  animation: fade-in-down 2s ease infinite;
+}
+@keyframes fade-in-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+

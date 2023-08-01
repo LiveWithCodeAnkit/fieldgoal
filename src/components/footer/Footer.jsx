@@ -3,8 +3,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div>
-      <footer className="container my-10 text-center text-sm self-end">
+    <div className="bg-gray flex justify-center items-center p-5 w-auto">
+      <footer className="text-center text-sm self-end">
         <Link className="classic-link" href="#">
           <span className="block mb-2 sm:inline sm:mb-0">
             Have a question or need help?{" "}

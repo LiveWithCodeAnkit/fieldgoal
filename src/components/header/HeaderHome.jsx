@@ -1,7 +1,9 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { MdOutlineSubject } from "react-icons/md";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const HeaderHome = () => {
   const divStyle = {
@@ -9,25 +11,28 @@ const HeaderHome = () => {
     backgroundColor: "#f3f5f8",
     backgroundImage: `linear-gradient(hsla(0, 0%, 100%, 0.001), #f3f5f8), url("/screen-pattern-gray.svg?52128fc")`,
     backgroundSize: "cover, 500px auto",
-    // height: "847px",
   };
+  const [showMediaIcon, setShowMediaIcon] = useState(false);
+
   return (
     <>
-      <div className="bg-[#047756] h-2"></div>
       <div
-        className="flex justify-center items-center py-20  font-Roboto"
+        className="flex justify-center items-center pt-20 relative"
         style={divStyle}
       >
-        <div className="flex flex-col items-center lg:items-start justify-center gap-4">
-          <div className="flex justify-center items-start gap-20 lg:gap-96 p-5">
-            <Link className="flex items-center gap-2 leading-none" href="#">
-              <MdOutlineSubject className="text-5xl bg-[#047756] text-white rounded-md" />
-              <label className="font-black text-3xl text-[#05B381]">
-                PostForm
-              </label>
-            </Link>
-            <nav>
-              <ul className="flex items-center gap-5 lg:gap-10 text-lg  text-blue-darker font-bold">
+        <div className="flex flex-col justify-center items-start px-5 gap-16">
+          <div className="slide-right flex justify-between items-center  w-full relative">
+            <div>
+              <Link className="flex items-center gap-2 leading-none" href="#">
+                <MdOutlineSubject className="text-3xl lg:text-4xl bg-[#047756] text-white rounded-md" />
+                <label className="font-black text-2xl lg:text-3xl text-[#05B381]">
+                  PostForm
+                </label>
+              </Link>
+            </div>
+
+            <nav className="hidden lg:flex justify-center items-center p-5">
+              <ul className="flex items-center gap-5 lg:gap-10 text-lg  text-blue-darker font-bold p-4">
                 <li className="hover:underline">
                   <Link href="#">See what&apos;s new! 🎉</Link>
                 </li>
@@ -48,19 +53,61 @@ const HeaderHome = () => {
                 </li>
               </ul>
             </nav>
+            <nav
+              className={
+                showMediaIcon
+                  ? "flex  w-full h-max justify-start bg-white lg:hidden absolute top-11 p-5"
+                  : "hidden"
+              }
+            >
+              <ul
+                className={
+                  "flex  flex-col items-start gap-5  text-blue-darker  w-full z-10"
+                }
+              >
+                <li className="hover:underline">
+                  <Link href="#">See what&apos;s new! 🎉</Link>
+                </li>
+
+                <li className="hover:underline">
+                  <Link href="/login">Sign In</Link>
+                </li>
+                <li className="hover:underline">
+                  <Link href="#">Docs</Link>
+                </li>
+                <li>
+                  <Link
+                    href="/register"
+                    className="bg-[#047756] btn-indigo p-2 rounded-md text-white hover:bg-[#05B381]"
+                  >
+                    Start Free Trial
+                  </Link>
+                </li>
+              </ul>
+            </nav>
+            <div className="humburger-nav lg:hidden">
+              <Link
+                href="#"
+                onClick={() => {
+                  setShowMediaIcon(!showMediaIcon);
+                  console.log("i am :-", showMediaIcon);
+                }}
+              >
+                <GiHamburgerMenu className="icon-humburger text-4xl text-[#047756] " />
+              </Link>
+            </div>
           </div>
-          <div className="font-extrabold text-5xl lg:w-[47rem] p-5 text-blue-darker font-sans text-center lg:text-start">
-            <span>
+          <div className="flex flex-col justify-center items-start text-center gap-5">
+            <span className="slide-left font-extrabold text-3xl lg:text-5xl text-blue-darker font-sans flex-1">
               Don&apos;t build a whole backend just for one stupid form.
             </span>
-          </div>
-          <div className="text-xl p-5 w-[32rem]  font-normal text-blue-lighter">
-            <span>
+            <span className="slide-left text-xl font-normal text-blue-lighter">
               FieldGoal provides form endpoints as a service, so your simple
               sites can stay simple.
             </span>
           </div>
-          <div className="flex flex-row-reverse  justify-center items-center  p-3">
+
+          <div className="slide-right flex flex-row-reverse  justify-center items-center  p-3">
             <Image
               src={"/messagePic.png"}
               width={400}

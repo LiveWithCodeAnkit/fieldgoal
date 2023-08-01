@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
+import { useState } from "react";
 import { MdOutlineSubject } from "react-icons/md";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { navBar } from "../constant/navBar";

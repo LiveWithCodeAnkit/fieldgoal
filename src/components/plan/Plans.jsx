@@ -30,7 +30,7 @@ const Plans = () => {
 
                 <div className="flex flex-col justify-center items-center gap-8 p-10">
                   <div className="flex flex-col justify-center items-start gap-3">
-                    <div className="h-28 lg:w-96">
+                    <div className="h-28 2xl:w-96">
                       <input
                         id="Single"
                         className="hidden plan-radio-button"

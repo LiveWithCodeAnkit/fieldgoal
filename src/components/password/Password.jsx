@@ -3,11 +3,8 @@ import React from "react";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import Link from "next/link";
 import { MdOutlineSubject } from "react-icons/md";
-// import { useLogin } from "./hook/useLogin";
 
 const Password = () => {
-  //   const { initialValues, schema, handleSubmit } = useLogin();
-
   return (
     <>
       <Formik initialValues={""} validationSchema={""} onSubmit={""}>
@@ -35,7 +32,7 @@ const Password = () => {
                     <Field
                       type="text"
                       name="email"
-                      className="w-96 classic-typing-input-on-white"
+                      className="w-full classic-typing-input-on-white"
                     />
                     <ErrorMessage
                       name="email"
