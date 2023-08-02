@@ -17,7 +17,7 @@ const Register = () => {
       >
         <Form>
           <div className="flex  justify-center items-start pt-9">
-            <div className="flex flex-col justify-center items-center gap-12 p-10">
+            <div className="flex flex-col justify-center items-center gap-12 lg:p-10">
               <div className="flex justify-center items-center">
                 <Link className="flex items-center gap-2 leading-none" href="#">
                   <MdOutlineSubject className="text-5xl bg-[#047756] text-white rounded-md" />
@@ -39,7 +39,7 @@ const Register = () => {
                     <Field
                       type="text"
                       name="email"
-                      className="w-96 classic-typing-input-on-white"
+                      className="lg:w-96 classic-typing-input-on-white"
                     />
                     <ErrorMessage
                       name="email"
@@ -52,7 +52,7 @@ const Register = () => {
                     <Field
                       type="password"
                       name="password"
-                      className="w-96 classic-typing-input-on-white"
+                      className="lg:w-96 classic-typing-input-on-white"
                     />
                     <label className="text-xs italic">
                       Password must be at least 6 characters long.
