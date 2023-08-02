@@ -35,8 +35,8 @@ const Login = () => {
                   </h1>
                 </div>
 
-                <div className="flex flex-col justify-center items-start gap-8  p-1">
-                  <div className="flex flex-col justify-center items-start gap-3 ">
+                <div className="flex flex-col justify-center items-start gap-8  p-4">
+                  <div className="flex flex-col justify-center items-start gap-3 w-full">
                     <label className="classic-label">Email</label>
                     <Field
                       type="text"

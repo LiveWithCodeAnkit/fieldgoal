@@ -10,7 +10,7 @@ const ChoosePlan = () => {
       <Formik initialValues={""} validationSchema={""} onSubmit={""}>
         <Form>
           <div className="flex  justify-center items-start pt-9">
-            <div className="flex flex-col justify-center items-center gap-12 p-10">
+            <div className="flex flex-col justify-center items-center gap-12 lg:p-10">
               <div className="flex justify-center items-center">
                 <Link className="flex items-center gap-2 leading-none" href="#">
                   <MdOutlineSubject className="text-5xl bg-[#047756] text-white rounded-md" />
@@ -26,13 +26,13 @@ const ChoosePlan = () => {
                   </h1>
                 </div>
 
-                <div className="flex flex-col justify-center items-start gap-8 p-10 w-full">
+                <div className="flex flex-col justify-center items-start gap-8 p-10 lg:w-full">
                   <div className="flex flex-col justify-center items-start gap-3 w-full">
                     <label className="classic-label">Name on Card</label>
                     <Field
                       type="text"
                       name="name"
-                      className="w-96 classic-typing-input-on-white"
+                      className="lg:w-96 classic-typing-input-on-white"
                     />
                     <ErrorMessage
                       name="name"
@@ -45,7 +45,7 @@ const ChoosePlan = () => {
                     <Field
                       type="text"
                       name="card"
-                      className="w-96 classic-typing-input-on-white"
+                      className="lg:w-96 classic-typing-input-on-white"
                     />
                     <ErrorMessage
                       name="card"

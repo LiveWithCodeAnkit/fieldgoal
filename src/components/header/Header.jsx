@@ -12,7 +12,7 @@ const Header = () => {
       <div className="flex justify-between items-center  p-5 relative border">
         <div>
           <Link className="flex items-center gap-2 leading-none" href="#">
-            <MdOutlineSubject className="text-2xl lg:text-5xl bg-[#047756] text-white rounded-md" />
+            <MdOutlineSubject className="text-xl lg:text-5xl bg-[#047756] text-white rounded-md" />
             <label className="font-black text-xl lg:text-3xl text-[#05B381]">
               PostForm
             </label>
@@ -34,13 +34,13 @@ const Header = () => {
         <nav
           className={
             showMediaIcon
-              ? "flex  w-full justify-start  lg:hidden absolute top-20 "
+              ? "flex  w-full justify-start  lg:hidden absolute top-20 right-0 left-0"
               : "hidden"
           }
         >
           <ul
             className={
-              "flex  flex-col items-start gap-5  text-blue-darker bg-white w-full z-10"
+              "flex  flex-col items-start gap-5 w-full text-blue-darker bg-white  z-10"
             }
           >
             {navBar.map((item) => (

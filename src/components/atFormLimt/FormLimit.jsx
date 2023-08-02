@@ -6,7 +6,7 @@ const FormLimit = ({ open, close }) => {
   return (
     <>
       <div className="fixed inset-0  flex flex-col p-3 items-center justify-center bg-opacity-25 bg-slate-400 ">
-        <div className="flex flex-col w-1/3 rounded-md bg-white shadow-lg">
+        <div className="flex flex-col lg:w-1/3 rounded-md bg-white shadow-lg">
           <div className="p-4 flex flex-col justify-center items-start gap-5">
             <h1 className="text-blue-darker text-2xl">At Form Limit</h1>
             <p className="text-blue-darker ">
@@ -15,11 +15,11 @@ const FormLimit = ({ open, close }) => {
             </p>
           </div>
 
-          <div className="bg-gray flex items-center justify-center   px-6 py-5 rounded-b-md">
+          <div className="bg-gray flex  flex-col-reverse gap-2 lg:flex-row items-center justify-center p-4 rounded-b-md">
             <button
               dusk="modal_modal_cancel"
               type="button"
-              className="btn btn-lg btn-white uppercase w-full sm:mr-4 sm:w-auto"
+              className="btn btn-lg btn-white text-xs p-4 uppercase"
               onClick={close}
             >
               Nevermind
@@ -27,7 +27,7 @@ const FormLimit = ({ open, close }) => {
             <Link
               dusk="modal_modal_confirm_link"
               href="/plan"
-              className="btn btn-lg  btn-indigo  mb-4 uppercase w-full sm:mb-0 sm:w-auto"
+              className="btn btn-lg  btn-indigo  text-xs p-4 uppercase "
             >
               Choose Plan
             </Link>

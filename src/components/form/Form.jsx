@@ -12,7 +12,7 @@ const Form = () => {
       <div className="flex justify-center items-center p-5 h-full pb-[35rem]">
         <div className="flex flex-col justify-center  gap-10 w-full lg:w-1/2">
           <div className="flex justify-between">
-            <h1 className="leading-tight text-4xl text-blue-darker">
+            <h1 className="leading-tight text-2xl lg:text-4xl text-blue-darker">
               Your Forms
             </h1>
             <button
