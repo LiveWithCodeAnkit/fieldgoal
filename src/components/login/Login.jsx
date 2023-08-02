@@ -35,13 +35,13 @@ const Login = () => {
                   </h1>
                 </div>
 
-                <div className="flex flex-col justify-center items-start gap-8 p-10 w-full">
-                  <div className="flex flex-col justify-center items-start gap-3 w-full">
+                <div className="flex flex-col justify-center items-start gap-8  p-1">
+                  <div className="flex flex-col justify-center items-start gap-3 ">
                     <label className="classic-label">Email</label>
                     <Field
                       type="text"
                       name="email"
-                      className="w-96 classic-typing-input-on-white"
+                      className="lg:w-96 classic-typing-input-on-white"
                     />
                     <ErrorMessage
                       name="email"
@@ -49,12 +49,12 @@ const Login = () => {
                       className="font-normal text-blue-darker"
                     />
                   </div>
-                  <div className="flex flex-col justify-center items-start gap-3 w-full">
+                  <div className="flex flex-col justify-center items-start gap-3 ">
                     <label className="classic-label">Password</label>
                     <Field
                       type="text"
                       name="password"
-                      className="w-96 classic-typing-input-on-white"
+                      className="lg:w-96 classic-typing-input-on-white"
                     />
                     <ErrorMessage
                       name="password"
@@ -62,12 +62,12 @@ const Login = () => {
                       className="font-normal text-blue-darker"
                     />
                   </div>
-                  <div className="flex justify-between items-start gap-10 text-blue-darker">
-                    <div className="flex justify-center items-center gap-2 ">
-                      <input type="checkbox" className="accent-[#05B381]" />
+                  <div className="flex justify-between items-start lg:gap-10 text-blue-darker w-auto">
+                    <div className="flex justify-center items-center gap-2 p-1">
+                      <input type="checkbox" className="accent-[#05B381] " />
                       Remember me
                     </div>
-                    <Link href="/login/password" className="classic-link">
+                    <Link href="/login/password" className="classic-link p-1">
                       Forgot your password?
                     </Link>
                   </div>
