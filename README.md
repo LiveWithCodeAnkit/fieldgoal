@@ -4,7 +4,7 @@
 
 ## Description
 
-This project is a frontend replica of the popular [Fieldgoal) website, developed using cutting-edge technologies to provide a seamless user experience. The primary objective was to recreate the website's frontend while incorporating modern web development practices and tools.
+This project is a frontend replica of the popular Fieldgoal) website, developed using cutting-edge technologies to provide a seamless user experience. The primary objective was to recreate the website's frontend while incorporating modern web development practices and tools.
 
 ## Technologies Used
 
