@@ -8,7 +8,7 @@ This project is a frontend replica of the popular Fieldgoal) website, developed 
 
 ## Technologies Used
 
-- **Next.js 13:** We leveraged the power of Next.js 13, a React framework, to enable server-side rendering, smooth routing, and enhanced performance. This ensures a fast and responsive user interface.
+- **Next.js version 13:** We leveraged the power of Next.js 13, a React framework, to enable server-side rendering, smooth routing, and enhanced performance. This ensures a fast and responsive user interface.
 
 - **Conditional Layout:** To make the website adaptive across different screen sizes and devices, we implemented conditional layout techniques, allowing the content to adjust gracefully.
 
